@@ -48,8 +48,8 @@ class ProductManager {
 
 const manager = new ProductManager();
 
-manager.addProduct("Producto 1", "Descripción 1", 10.99, "imagen1.jpg", "001", 100);
-manager.addProduct("Producto 2", "Descripción 2", 19.99, "imagen2.jpg", "002", 50);
+manager.addProduct("Producto 1", "Descripción 1", 250, "img1", "001", 100);
+manager.addProduct("Producto 2", "Descripción 2", 300, "img2", "002", 50);
 
 console.log(manager.getProducts());
 console.log(manager.getProductById(1));
