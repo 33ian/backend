@@ -41,7 +41,7 @@ class ProductManager {
         if (product) {
             return product;
         } else {
-            console.error("No se pudo encontrar el producto");
+            throw new Error("No se pudo encontrar el producto");
         }
     }
 }
