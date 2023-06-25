@@ -1,4 +1,4 @@
-const ProductManager = require('./segundo-desafio.js');
+const ProductManager = require('./ProductManager.js');
 
 const manager = new ProductManager('products.json');
 
