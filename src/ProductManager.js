@@ -1,27 +1,28 @@
-const fs = require('fs');
+import fs from "fs";
 
-class ProductManager {
+export class ProductManager {
     constructor(filePath) {
         this.path = filePath;
         this.products = [];
         this.loadProducts();
     }
 
-    loadProducts() {
+    async loadProducts() {
         try {
-            const data = fs.readFileSync(this.path, 'utf8');
+            const data = await fs.promises.readFile(this.path, 'utf8');
             if (data) {
                 this.products = JSON.parse(data);
             }
+            console.log("loadProducts: ", this.products);
+            return this.products;
         } catch (err) {
-            return []
-            
+            throw new Error("Hubo un error al cargar el producto", err);
         }
     }
 
-    saveProducts() {
+    async saveProducts() {
         try {
-            fs.writeFileSync(this.path, JSON.stringify(this.products, null, 2));
+            await fs.promises.writeFile(this.path, JSON.stringify(this.products, null, 2));
         } catch (err) {
             throw new Error("Hubo un error al guardar el producto", err);
         }
@@ -95,5 +96,3 @@ class ProductManager {
         this.saveProducts();
     }
 }
-
-module.exports = ProductManager;
