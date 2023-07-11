@@ -1,24 +1,46 @@
 [
-	{
-		"id": "b7898576-bd4d-439b-9e95-5050549e3c15",
-		"title": "Producto 1 prueba",
-		"description": "Descripción 1 prueba",
-		"price": 350,
-		"thumbnail": "img1",
-		"code": "001",
-		"stock": 100,
-		"status": true,
-		"category": "prueba"
-	},
-	{
-		"id": "f8a9e30a-44a1-4b42-9438-e6396d898db6",
-		"title": "Producto 2 prueba",
-		"description": "Descripción 2 prueba",
-		"price": 120,
-		"thumbnail": "img2",
-		"code": "002",
-		"stock": 40,
-		"status": true,
-		"category": "prueba 2"
-	}
+  {
+    "id": "b7898576-bd4d-439b-9e95-5050549e3c15",
+    "title": "Producto 1 prueba",
+    "description": "Descripción 1 prueba actualizada",
+    "price": 350,
+    "thumbnail": "img1",
+    "code": "001",
+    "stock": 100,
+    "status": true,
+    "category": "prueba"
+  },
+  {
+    "id": "f8a9e30a-44a1-4b42-9438-e6396d898db6",
+    "title": "Producto 2 prueba",
+    "description": "Descripción 2 prueba",
+    "price": 120,
+    "thumbnail": "img2",
+    "code": "002",
+    "stock": 40,
+    "status": true,
+    "category": "prueba"
+  },
+  {
+    "id": "96c1aa2f-d539-4d0e-a087-c188d464ea5f",
+    "title": "Producto 3 prueba",
+    "description": "Descripción 3 prueba",
+    "price": 900,
+    "thumbnail": "img3",
+    "code": "003",
+    "stock": 14,
+    "status": true,
+    "category": "prueba"
+  },
+  {
+    "id": "d82f8145-00a8-488e-b4f8-31127de308b2",
+    "title": "Producto 4 prueba",
+    "description": "Descripción 4 prueba",
+    "price": 122,
+    "thumbnail": "img4",
+    "code": "004",
+    "stock": 103,
+    "status": true,
+    "category": "prueba"
+  }
 ]
