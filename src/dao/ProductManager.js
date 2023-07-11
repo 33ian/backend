@@ -32,7 +32,7 @@ generateId() {
     return newId
 }
 
-async save() {
+async saveProducts() {
     try {
         await fs.promises.writeFile(this.path, JSON.stringify(this.products, null, 2));
     } catch (error) {
@@ -65,7 +65,7 @@ addProduct(product) {
     };
 
     this.products.push(newProduct);
-    this.save();
+    this.saveProducts();
     return newProduct;
 }
 
@@ -93,7 +93,7 @@ getProducts() {
 
         const updatedProduct = { ...this.products[productIndex], ...updatedFields };
         this.products[productIndex] = updatedProduct;
-        this.save();
+        this.saveProducts();
     }
 
     deleteProduct(id) {
@@ -104,6 +104,6 @@ getProducts() {
         }
 
         this.products.splice(productIndex, 1);
-        this.save();
+        this.saveProducts();
     }
 }
