@@ -1,3 +1,17 @@
-<h1>Página principal</h1>
+<h1>Lista de productos</h1>
 <script src="/socket.io/socket.io.js"></script>
 <script src="/js/home.js"></script>
+
+    {{!-- {{#each productList}} --}}
+    <p>
+        title: {{this.title}},<br>
+        code: {{this.code}},<br>
+        description: {{this.description}},<br>
+        price: {{this.price}},<br>
+        status: {{this.status}},<br>
+        stock: {{this.stock}},<br>
+        thumbnail: {{this.thumbnail}},<br>
+        id: {{this.id}},<br>
+        category: {{this.category}},<br>
+    </p>
+    {{!-- {{/each}} --}}

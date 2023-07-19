@@ -15,7 +15,7 @@ const htttpServer = app.listen(port,()=>console.log(`El servidor esta escuchando
 
 app.engine('.hbs', engine({extname: '.hbs'}));
 app.set('view engine', '.hbs');
-app.set('views', path.join(__dirname,"./views"));
+app.set('views', path.join(__dirname,"/views"));
 
 const socketServer = new Server(htttpServer);
 

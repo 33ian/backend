@@ -78,3 +78,4 @@ router.delete("/:pid",(req,res)=>{
 })
 
 export {router as productsRouter}
+export {productService}
